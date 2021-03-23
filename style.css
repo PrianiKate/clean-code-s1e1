@@ -13,7 +13,7 @@ body {
 .header img {
   width: 100%;
 }
-.header .more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -29,7 +29,7 @@ body {
   width: 400px;
   margin: 0 auto 0;
 }
-.task {
+.centered-main__task {
   width: 56%;
   display: inline-block;
 }
@@ -119,15 +119,15 @@ li > label {
 li > input[type="text"] {
   width: 226px;
 }
-.delete:hover {
+.centered-main__delete:hover {
   color: #CF2323;
 }
-.delete img {
+.centered-main__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete img:hover {
+.centered-main__delete img:hover {
   transform: rotateZ(0);
 }
 /* Completed */
@@ -141,12 +141,12 @@ ul li input[type=text] {
   display: none;
 }
 
-.edit-mode input[type=text] {
+.centered-main__edit-mode input[type=text] {
   display: inline-block;
   /* width:224px */
   width: 204px;
 }
 
-.edit-mode label {
+.centered-main__edit-mode label {
   display: none;
 }

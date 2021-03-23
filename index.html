@@ -6,47 +6,47 @@
   </head>
   <body>
     <header class="header">
-      <img src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
-      <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
+      <a class="header__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </header>
     <main class="centered-main">
-      <p id="add-element-to-list">
-        <label for="new-task">Add Item</label>
-        <input id="new-task" type="text">
-        <button>Add</button>
+      <p class="centered-main__content" id="add-element-to-list">
+        <label class="centered-main__label" for="new-task">Add Item</label>
+        <input class="centered-main__input" id="new-task" type="text">
+        <button class="centered-main__button">Add</button>
       </p>
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks">
+      <h3 class="centered-main__h3">Todo</h3>
+      <ul class="centered-main__incomplete-tasks" id="incomplete-tasks">
         <li>
-          <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="remove">
+          <input class="centered-main__input" type="checkbox">
+          <label class="centered-main__task">Pay Bills</label>
+          <input class="centered-main__input" type="text">
+          <button class="centered-main__edit">Edit</button>
+          <button class="centered-main__delete">
+            <img class="centered-main__img" src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="edit-mode">
-          <input type="checkbox">
-          <label class="task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
+        <li class="centered-main__edit-mode">
+          <input class="centered-main__input" type="checkbox">
+          <label class="centered-main__task">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="centered-main__task">
+          <button class="centered-main__edit">Save</button>
+          <button class="centered-main__delete">
             <img src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg" alt="remove">
+      <h3 class="centered-main__h3">Completed</h3>
+      <ul class="centered-main__completed-tasks" id="completed-tasks">
+        <li class="centered-main__item">
+          <input class="centered-main__input" type="checkbox" checked>
+          <label class="centered-main__task">See the Doctor</label>
+          <input class="centered-main__input" type="text">
+          <button class="centered-main__edit">Edit</button>
+          <button class="centered-main__delete">
+            <img class="centered-main__img" src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
