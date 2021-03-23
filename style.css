@@ -86,7 +86,8 @@ label[for="new-task"] {
   margin: 0 0 20px;
 }
 input#new-task {
-  width: 318px;
+  /* width: 318px; */
+  width:288px;
 }
 p > button:hover {
   color: #0FC57C;
@@ -125,7 +126,6 @@ button.delete img {
 button.delete img:hover {
   transform: rotateZ(0);
 }
-
 /* Completed */
 ul#completed-tasks label {
   text-decoration: line-through
@@ -139,7 +139,8 @@ ul li input[type=text] {
 
 ul li.editMode input[type=text] {
   display:inline-block;
-  width:224px
+  /* width:224px */
+  width:204px;
 }
 
 ul li.editMode label {
