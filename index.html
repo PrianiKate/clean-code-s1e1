@@ -13,39 +13,39 @@
     </header>
     <main class="centered_main">
       <p class="centered_main__content" id="add-element-to-list">
-        <label class="centered_main__label" for="new-task">Add Item</label>
-        <input class="centered_main__input" id="new-task" type="text">
-        <button class="centered_main__button">Add</button>
+        <label class="centered_main__label centered_main__new_task" for="new-task">Add Item</label>
+        <input class="centered_main__input centered_main__text" id="new-task" type="text">
+        <button class="centered_main__button centered_main__add">Add</button>
       </p>
       <h3 class="centered_main__h3">Todo</h3>
-      <ul class="centered_main__incomplete_tasks" id="incomplete-tasks">
-        <li>
+      <ul class="centered_main_list centered_main__incomplete_tasks" id="incomplete-tasks">
+        <li class="centered_main__li">
           <input class="centered_main__input" type="checkbox">
           <label class="centered_main__task">Pay Bills</label>
-          <input class="centered_main__input" type="text">
-          <button class="centered_main__edit">Edit</button>
-          <button class="centered_main__delete">
+          <input class="centered_main__input centered_main__text" type="text">
+          <button class="centered_main__button centered_main__edit">Edit</button>
+          <button class="centered_main__button centered_main__delete">
             <img class="centered_main__img" src="./remove.svg" alt="remove">
           </button>
         </li>
-        <li class="centered_main__edit_mode">
+        <li class="centered_main__li centered_main__edit_mode">
           <input class="centered_main__input" type="checkbox">
           <label class="centered_main__task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="centered_main__task">
-          <button class="centered_main__edit">Save</button>
-          <button class="centered_main__delete">
+          <input type="text" value="Go Shopping" class="centered_main__input centered_main__task centered_main__text">
+          <button class="centered_main__button centered_main__edit">Save</button>
+          <button class="centered_main__button centered_main__delete">
             <img src="./remove.svg" alt="remove">
           </button>
         </li>
       </ul>
       <h3 class="centered_main__h3">Completed</h3>
-      <ul class="centered_main__completed_tasks" id="completed-tasks">
-        <li class="centered_main__item">
+      <ul class="centered_main_list centered_main__completed_tasks" id="completed-tasks">
+        <li class="centered_main__li centered_main__item">
           <input class="centered_main__input" type="checkbox" checked>
           <label class="centered_main__task">See the Doctor</label>
-          <input class="centered_main__input" type="text">
-          <button class="centered_main__edit">Edit</button>
-          <button class="centered_main__delete">
+          <input class="centered_main__input centered_main__text" type="text">
+          <button class="centered_main__button centered_main__edit">Edit</button>
+          <button class="centered_main__button centered_main__delete">
             <img class="centered_main__img" src="./remove.svg" alt="remove">
           </button>
         </li>
