@@ -33,17 +33,17 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='centered-main__task';
+    label.className='centered_main__task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="centered-main__edit";
+    editButton.className="centered_main__edit";
 
     deleteButton.innerText="Delete";
-    deleteButton.className="centered-main__delete";
+    deleteButton.className="centered_main__delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -84,8 +84,8 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".centered-main__edit");
-    var containsClass=listItem.classList.contains("centered-main__edit-mode");
+    var editBtn=listItem.querySelector(".centered_main__edit");
+    var containsClass=listItem.classList.contains("centered_main__edit_mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("centered-main__edit-mode");
+    listItem.classList.toggle("centered_main__edit_mode");
 };
 
 
@@ -156,8 +156,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.centered-main__edit");
-    var deleteButton=taskListItem.querySelector("button.centered-main__delete");
+    var editButton=taskListItem.querySelector("button.centered_main__edit");
+    var deleteButton=taskListItem.querySelector("button.centered_main__delete");
 
 
     //Bind editTask to edit button.
